@@ -70,7 +70,7 @@ RUN mkdir -p ${USER_HOME}/.java/.systemPrefs && \
 # copy wso2 product distribution to user's home directory and set ownership
 COPY --chown=wso2carbon:wso2 ${FILES}/${WSO2_SERVER_PACK}/ ${WSO2_SERVER_HOME}/
 # copy mysql connector jar to the server as a third party library
-COPY --chown=wso2carbon:wso2 ${FILES}/mysql-connector-java-*-bin.jar ${WSO2_SERVER_HOME}/lib/
+COPY --chown=wso2carbon:wso2 ${FILES}/mysql-connector-java-*.jar ${WSO2_SERVER_HOME}/lib/
 
 # set environment variables
 ENV WSO2_SERVER_HOME=${USER_HOME}/${WSO2_SERVER_PACK} \
