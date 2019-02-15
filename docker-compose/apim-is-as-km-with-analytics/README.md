@@ -7,7 +7,7 @@
    in order to run the steps provided in following Quick start guide. <br><br>
  * In order to run this Docker Compose setup, you will need an active subscription from WSO2 since the referring Docker images hosted at docker.wso2.com contains the latest updates and fixes for WSO2 API Manager and
    API Manager Analytics 2.6.0 and WSO2 Identity Server as KM 5.7.0. You can sign up for a Free Trial Subscription [here](https://wso2.com/free-trial-subscription). <br><br>
- * If you wish to run the Docker Compose setup using Docker images built locally, build Docker images using Docker resources available from [here](../../dockerfiles/) and remove the `docker.wso2.com/` prefix from the `image` name in the `docker-compose.yml`. <br><br>
+ * If you wish to run the Docker Compose setup using Docker images built locally, build Docker images using Docker resources available from [here](../../dockerfiles/) and remove the `jointreinamentosegovernanca/` prefix from the `image` name in the `docker-compose.yml`. <br><br>
     
 ## Quick Start Guide
 

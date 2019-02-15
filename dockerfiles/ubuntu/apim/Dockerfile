@@ -66,6 +66,10 @@ RUN mkdir -p ${USER_HOME}/.java/.systemPrefs && \
 COPY --chown=wso2carbon:wso2 ${FILES}/${WSO2_SERVER_PACK}/ ${WSO2_SERVER_HOME}/
 # copy shared artifacts to a temporary location
 COPY --chown=wso2carbon:wso2 ${FILES}/${WSO2_SERVER_PACK}/repository/deployment/server/ ${USER_HOME}/wso2-tmp/server/
+
+# Ricardo Mangabeira - Resolvendo problema de permissão no Kubernetes
+RUN chmod -R 777 ${FILES}/${WSO2_SERVER_PACK}/repository/deployment/server/ 
+
 # copy init script to user home
 COPY --chown=wso2carbon:wso2 init.sh ${USER_HOME}/
 # copy mysql connector jar to the server as a third party library

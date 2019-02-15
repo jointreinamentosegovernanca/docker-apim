@@ -9,7 +9,7 @@
  * In order to run this Docker Compose setup, you will need an active [Free Trial Subscription](https://wso2.com/free-trial-subscription) 
    from WSO2 since the referring Docker images hosted at docker.wso2.com contains the latest updates and fixes for WSO2 API Manager and 
    API Manager Analytics 2.6.0 products. You can sign up for a Free Trial Subscription [here](https://wso2.com/free-trial-subscription). <br><br>
- * If you wish to run the Docker Compose setup using Docker images built locally, build Docker images using Docker resources available from [here](../../dockerfiles/) and remove the `docker.wso2.com/` prefix from the `image` name in the `docker-compose.yml`. <br><br>
+ * If you wish to run the Docker Compose setup using Docker images built locally, build Docker images using Docker resources available from [here](../../dockerfiles/) and remove the `jointreinamentosegovernanca/` prefix from the `image` name in the `docker-compose.yml`. <br><br>
   
 <br>
 
