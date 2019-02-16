@@ -73,6 +73,7 @@ if test -d ${original_deployment_artifacts}; then
     if [ -z "$(ls -A ${deployment_volume}/)" ]; then
 	    # if no artifact is found under <WSO2_SERVER_HOME>/repository/deployment; copy originals
         echo "Copying original deployment artifacts from temporary location to server..."
+        chmod 777 ${deployment_volume}/
         cp -R ${original_deployment_artifacts}/* ${deployment_volume}/
     fi
 fi
